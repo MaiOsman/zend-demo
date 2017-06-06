@@ -1,0 +1,23 @@
+<html>
+<div class="container">
+<div class="panel panel-primary">
+ <div class="panel-heading">
+   <h1><center>
+  <?php
+      $user_data = $this->user;
+      echo $user_data['fname']. " " .$user_data['lname'];
+
+   ?>
+
+</center>
+</div>
+  <div class="panel-body">
+    <label>E-mail : <?= $user_data['email']; ?> </label><br>
+    <label>Gender : <?= $user_data['gender']; ?></label><br>
+    <label>Track  : <?= $user_data['track']; ?></label><br>
+  </div>
+</div>
+
+</div>
+
+</html>
